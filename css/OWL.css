@@ -1,0 +1,31 @@
+.owl-carousel {
+  position: relative;
+}
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex !important;
+  flex-direction: row !important;       /* Force horizontal */
+  justify-content: space-between !important;
+  align-items: center;                  /* Center vertically */
+  padding: 0 15px;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.owl-theme .owl-nav button.owl-prev,
+.owl-theme .owl-nav button.owl-next {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  pointer-events: auto;
+  flex-shrink: 0;        /* Prevent shrinking */
+  width: auto;           /* Let width auto */
+  margin: 0;             /* Remove any margin */
+}
